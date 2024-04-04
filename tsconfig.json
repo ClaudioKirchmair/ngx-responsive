@@ -1,34 +1,30 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "emitDecoratorMetadata": true,
-        "experimentalDecorators": true,
-        "strict": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "strictNullChecks": false,
-        "noImplicitAny": false,
-        "removeComments": true, 
-        "rootDir": ".",
-        "sourceMap": true,
-        "inlineSources": true,
-        "target": "es5",
-        "skipLibCheck": true,
-        "lib": [
-            "es2015",
-            "dom"
-        ],
-        "typeRoots": [
-            "node_modules/@types/"
-        ]
-    },
-    "exclude": [
-        "node_modules",
-        "examples"
+  "compilerOptions": {
+    "baseUrl": ".",
+    "experimentalDecorators": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "inlineSources": true,
+    "target": "ES2022",
+    "skipLibCheck": true,
+    "lib": [
+      "es2018",
+      "dom"
     ],
-    "angularCompilerOptions": {
-        "genDir": "./dist",
-        "skipMetadataEmit": false,
-        "skipTemplateCodegen": true
-    }
+    "typeRoots": [
+      "node_modules/@types/"
+    ],
+    "useDefineForClassFields": false
+  },
+  "exclude": ["node_modules", "examples"],
+  "angularCompilerOptions": {
+    "genDir": "./dist",
+    "skipMetadataEmit": false,
+    "skipTemplateCodegen": true
+  }
 }
